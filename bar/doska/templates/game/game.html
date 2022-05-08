@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GamePage</title>
+  </head>
+  <body>
+
+<h1>It's the cookie clicker game</h1>
+<h3>Created by IAlexstrazaI</h3>
+<img
+src="https://cdn.picpng.com/cookie/cookie-picture-26897.png"
+id = "cookie"
+style = "width:200px"
+onclick="addToScore(1)">
+<p>cookie clicked: <span id="score">0</span></p>
+<script type="text/javascript">
+  function addToScore(amount){
+    score = score + amount;
+    document.getElementById("score").innerHTML = score;}
+
+  var score = 0;
+</script>
+
+
+
+
+
+
+  </body>
+</html>

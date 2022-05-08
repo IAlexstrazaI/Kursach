@@ -16,7 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from doska import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('doska/', views.home),
+    path('doska/', views.doska),
+    path('', views.mainpage),
+    path('game/', views.game),
 ]
