@@ -8,6 +8,16 @@
   {% if notice %}
     {% for i in notice %}
     <div class="alert  alert-warning mt-2"> {{i.text}}  </div>
+
+
+    {% for j in comment %}
+      {% if j.notice == i %}
+      <li>{{j.text}}</li>
+      {% endif %}
+    {% endfor %}
+
+
+
     {% endfor %}
   {% else %}
   <h1>Записи отсутсвуют</h1>

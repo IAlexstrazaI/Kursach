@@ -20,6 +20,7 @@ from doska import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('doska/', views.doska),
+    path('noticecreator/',views.noticecreator),
     path('', views.mainpage),
     path('game/', views.game),
 ]

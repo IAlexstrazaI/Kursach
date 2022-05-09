@@ -4,6 +4,7 @@ from django.db import models
 
 class notice(models.Model):
     text = models.CharField(max_length = 200)
+    date = models.DateTimeField(True)
     def __str__(self):
         return self.text
 
