@@ -1,0 +1,15 @@
+{% extends 'doska/base.html' %}
+
+{% block title %}
+Доска объявлений
+{% endblock %}
+
+{% block content %}
+  {% if notice %}
+    {% for i in notice %}
+    <div class="alert  alert-warning mt-2"> {{i.text}}  </div>
+    {% endfor %}
+  {% else %}
+  <h1>Записи отсутсвуют</h1>
+  {% endif  %}
+{% endblock %}
